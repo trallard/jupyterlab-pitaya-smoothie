@@ -167,7 +167,7 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-content-font-color2: rgba(247, 247, 247, 0.54);
   --jp-content-font-color3: rgba(247, 247, 247, 0.38);
 
-  --jp-content-link-color: var(--md-blue-700);
+  --jp-content-link-color: #9e62ff;
 
   --jp-content-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
@@ -284,7 +284,7 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   --jp-notebook-padding: 10px;
   --jp-notebook-select-background: var(--jp-layout-color1);
-  --jp-notebook-multiselected-color: var(--md-blue-50);
+  --jp-notebook-multiselected-color: #7649bf;
 
   /* The scroll padding is calculated to fill enough space at the bottom of the
   notebook to show one single-line cell (with appropriate padding) at the top
@@ -352,15 +352,15 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-mirror-editor-string-2-color: #A599E9;
   --jp-mirror-editor-meta-color: #aa22ff;
   --jp-mirror-editor-qualifier-color: #7E7AAA;
-  --jp-mirror-editor-builtin-color: #FFE46B;
+  --jp-mirror-editor-builtin-color: #CAF884;
   --jp-mirror-editor-bracket-color: #82b1ff;
-  --jp-mirror-editor-tag-color: #170;
+  --jp-mirror-editor-tag-color: #82b1ff;
   --jp-mirror-editor-attribute-color: #f3907e;
   --jp-mirror-editor-header-color: #66E9EC;
-  --jp-mirror-editor-quote-color: #7ef3ca;
+  --jp-mirror-editor-quote-color: #efefef;
   --jp-mirror-editor-link-color: #C4A2F5;
   --jp-mirror-editor-error-color: #ff6e9c;
-  --jp-mirror-editor-hr-color: #a599e9;
+  --jp-mirror-editor-hr-color: #7E7AAA;
 
   /* Vega extension styles */
 
