@@ -120,7 +120,7 @@ all of MD as it is not optimized for dense, information rich UIs.
   /* Defaults use Material Design specification */
   /* active item */
   --jp-ui-font-color0: #F7F7F7;
-  /* sidebar */
+  /* sidebar files & folders */
   --jp-ui-font-color1: #9491ce;
   --jp-ui-font-color2: #9491ce8f;
   --jp-ui-font-color3: #9491ce54;
@@ -199,16 +199,17 @@ all of MD as it is not optimized for dense, information rich UIs.
    * theme these would go from light to dark.
    */
 
-   /* main notebook background */
+  /* main notebook background - same as editor original theme*/
   --jp-layout-color0: #181036;
-  /* sidebar - file names */
-  --jp-layout-color1: #130C29; 
-  /* tabs and side bar - icons  and inactive tab*/
+  /* sidebar - file names, menu bar, active tab */
+  --jp-layout-color1: #0b0718; 
+  /* activity bar, inactive tab, status bar*/
   /* pitaya smoothie -> using same as background 181036 */
-  --jp-layout-color2: #3d3168;
+  /* here use same as inactive tabs */
+  --jp-layout-color2: #1f1445;
   /* editor/notebok surrounding area */
-  --jp-layout-color3: #70649b;
-  --jp-layout-color4: #9990bc;
+  --jp-layout-color3: #130C29;
+  --jp-layout-color4: #251954;
 
   /* Inverse Layout
    *
@@ -216,11 +217,14 @@ all of MD as it is not optimized for dense, information rich UIs.
    * theme these would go from dark to light.
    */
 
-  --jp-inverse-layout-color0: #111111;
-  --jp-inverse-layout-color1: var(--md-grey-900);
-  --jp-inverse-layout-color2: var(--md-grey-800);
-  --jp-inverse-layout-color3: var(--md-grey-700);
-  --jp-inverse-layout-color4: var(--md-grey-600);
+  /* using activity bar colours as reference */
+  --jp-inverse-layout-color0: #a29fd4;
+  --jp-inverse-layout-color1: #9491ce;
+  /* status bar icons */
+  --jp-inverse-layout-color2: #8784c8;
+  /* activity bar icons */
+  --jp-inverse-layout-color3: #7a76c2;
+  --jp-inverse-layout-color4: #6d68bc;
 
   /* Brand/accent */
 
