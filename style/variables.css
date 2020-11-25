@@ -29,6 +29,45 @@ all of MD as it is not optimized for dense, information rich UIs.
   /* defining colours here */
   --jupyter-orange: var(--md-orange-700);
 
+  --pitaya-aqua0: #18c1c4;
+  --pitaya-aqua1: #48d0d3;
+  --pitaya-aqua2: #7fe0e2;
+  --pitaya-aqua3: #7fe0e2;
+
+  /* pitayaesque */
+  --pitaya-pink0: #F26196;
+  --pitaya-pink1: #f474a3;
+  --pitaya-pink2: #f587af;
+  --pitaya-pink3: #f9aec9;
+
+  --pitaya-yellow0: #FAD000;
+  --pitaya-yellow1: #fbd61f;
+  --pitaya-yellow2: #fce15e;
+  --pitaya-yellow3: #fded9e;
+
+  --pitaya-green0: #18c0c4;
+  --pitaya-green1: #2fc8cb;
+  --pitaya-green2: #62d7da;
+  --pitaya-green3: #9ce7e9;
+  
+  --pitaya-teal0: #18c1c4;
+  --pitaya-teal1: #48d0d3;
+  --pitaya-teal2: #7fe0e2;
+
+  --pitaya-periwinkle0: #7998F2;
+  --pitaya-periwinkle1: #89a4f4;
+  --pitaya-periwinkle2: #aabdf7;
+  --pitaya-periwinkle3: #cbd7fa;
+
+  --pitaya-red0: #f85e9f;
+  --pitaya-red1: #f972ab;
+  --pitaya-red2: #fb99c2;
+  --pitaya-red3: #fcc2da;
+
+  --pitaya-foreground: #F7F7F7;
+  --pitaya-background: #181036;
+  --pitaya-active-items: #2d2a60;
+
   /* Elevation
    *
    * We style box-shadows using Material Design's idea of elevation. These particular numbers are taken from here:
@@ -234,38 +273,38 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   /* Brand/accent */
 
-  --jp-brand-color0: #18c1c4;
-  /* sidebar active item */
-  --jp-brand-color1: #2d2a60;
-  --jp-brand-color2: #48d0d3;
-  --jp-brand-color3: #7fe0e2;
+  --jp-brand-color0: var(--pitaya-teal0);
+  /* sidebar active item - testing compliance with pitaya */
+  --jp-brand-color1: var(--pitaya-active-items);
+  --jp-brand-color2: var(--pitaya-teal1);
+  --jp-brand-color3: var(--pitaya-teal2);
 
-  --jp-accent-color0: #F26196;
-  --jp-accent-color1: #f474a3;
-  --jp-accent-color2: #f587af;
-  --jp-accent-color3: #f9aec9;
+  --jp-accent-color0: var(--pitaya-pink0);
+  --jp-accent-color1: var(--pitaya-pink1);
+  --jp-accent-color2: var(--pitaya-pink2);
+  --jp-accent-color3: var(--pitaya-pink3);
 
   /* State colors (warn, error, success, info) */
 
-  --jp-warn-color0: #FAD000;
-  --jp-warn-color1: #fbd61f;
-  --jp-warn-color2: #fce15e;
-  --jp-warn-color3: #fded9e;
+  --jp-warn-color0: var(--pitaya-yellow0);
+  --jp-warn-color1: var(--pitaya-yellow1);
+  --jp-warn-color2: var(--pitaya-yellow2);
+  --jp-warn-color3: var(--pitaya-yellow3);
 
-  --jp-error-color0: #f85e9f;
-  --jp-error-color1: #f972ab;
-  --jp-error-color2: #fb99c2;
-  --jp-error-color3: #fcc2da;
+  --jp-error-color0: var(--pitaya-red0);
+  --jp-error-color1: var(--pitaya-red1);
+  --jp-error-color2: var(--pitaya-red2);
+  --jp-error-color3: var(--pitaya-red3);
 
-  --jp-success-color0: #18c0c4;
-  --jp-success-color1: #2fc8cb;
-  --jp-success-color2: #62d7da;
-  --jp-success-color3: #9ce7e9;
+  --jp-success-color0: var(--pitaya-green0);
+  --jp-success-color1: var(--pitaya-green1);
+  --jp-success-color2: var(--pitaya-green2);
+  --jp-success-color3: var(--pitaya-green3);
 
-  --jp-info-color0: #7998F2;
-  --jp-info-color1: #89a4f4;
-  --jp-info-color2: #aabdf7;
-  --jp-info-color3: #cbd7fa;
+  --jp-info-color0: var(--pitaya-periwinkle0);
+  --jp-info-color1: var(--pitaya-periwinkle1);
+  --jp-info-color2: var(--pitaya-periwinkle2);
+  --jp-info-color3: var(--pitaya-periwinkle3);
 
   /* Cell specific styles */
 
@@ -392,7 +431,7 @@ all of MD as it is not optimized for dense, information rich UIs.
   /* the space in between the sides of the thumb and the track */
   --jp-scrollbar-thumb-radius: 9px;
   /* set to a large-ish value for rounded endcaps on the thumb */ 
-  
+
 }
 
 
