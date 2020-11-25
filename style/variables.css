@@ -53,20 +53,28 @@ all of MD as it is not optimized for dense, information rich UIs.
   --pitaya-teal0: #18c1c4;
   --pitaya-teal1: #48d0d3;
   --pitaya-teal2: #7fe0e2;
+  --pitaya-teal-extra: #31E6E6;
 
   --pitaya-periwinkle0: #7998F2;
   --pitaya-periwinkle1: #89a4f4;
   --pitaya-periwinkle2: #aabdf7;
   --pitaya-periwinkle3: #cbd7fa;
+  --pitaya-periwinkle-extra: #9dbcf6;
+  --pitaya-periwinkle-extra1: #82b1ff;
 
   --pitaya-red0: #f85e9f;
   --pitaya-red1: #f972ab;
   --pitaya-red2: #fb99c2;
   --pitaya-red3: #fcc2da;
+  --pitaya-orange: #f3907e;
 
   --pitaya-foreground: #F7F7F7;
   --pitaya-background: #181036;
   --pitaya-active-items: #2d2a60;
+  --pitaya-active-items-foreground: #7EA7F3;
+
+  --pitaya-lilac: #b07afc;
+  --pitaya-muted-lilac: #7E7AAA;
 
   /* Elevation
    *
@@ -316,7 +324,7 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   --jp-cell-editor-background: #181036;
   --jp-cell-editor-border-color: rgba(	137, 164, 244, 0.6);
-  --jp-cell-editor-box-shadow: inset 0 0 2px #89a4f4;
+  --jp-cell-editor-box-shadow: inset 0 0 2px var(--pitaya-periwinkle1);
   --jp-cell-editor-active-background: var(--jp-layout-color0);
   --jp-cell-editor-active-border-color: var(--jp-brand-color0);
 
@@ -325,9 +333,9 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-cell-prompt-letter-spacing: 0px;
   --jp-cell-prompt-opacity: 1;
   --jp-cell-prompt-not-active-opacity: 0.5;
-  --jp-cell-prompt-not-active-font-color: #9dbcf6;
+  --jp-cell-prompt-not-active-font-color: var(--pitaya-periwinkle-extra);
   --jp-cell-inprompt-font-color: #a56CF5;
-  --jp-cell-outprompt-font-color: #18c0c4;
+  --jp-cell-outprompt-font-color: var(--pitaya-green0);
 
   /* Notebook specific styles */
 
@@ -367,11 +375,12 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-toolbar-background: var(--jp-layout-color1);
   --jp-toolbar-box-shadow: 0px 0px 2px 0px rgba(51,48,107, 0.24);
   --jp-toolbar-header-margin: 4px 4px 0px 4px;
-  --jp-toolbar-active-background: #251954;
+  /* --jp-toolbar-active-background: #251954; */
+  --jp-toolbar-active-background: var(--pitaya-active-items);
 
   /* Input field styles */
 
-  --jp-input-box-shadow: inset 0 0 2px var(--md-blue-300);
+  --jp-input-box-shadow: inset 0 0 2px var(--pitaya-periwinkle3);
   --jp-input-active-background: var(--jp-layout-color1);
   --jp-input-hover-background: var(--jp-layout-color1);
   --jp-input-background: var(--md-grey-100);
@@ -382,38 +391,38 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   --jp-editor-selected-background: #31108c9d;
   --jp-editor-selected-focused-background: #341e83e5;
-  --jp-editor-cursor-color: #f85e9f;
+  --jp-editor-cursor-color: var(--pitaya-red0);
 
   /* Code mirror specific styles */
 
-  --jp-mirror-editor-keyword-color: #f26196;
-  --jp-mirror-editor-atom-color: #88f;
-  --jp-mirror-editor-number-color: #f3907e;
+  --jp-mirror-editor-keyword-color: var(--pitaya-pink0);
+  --jp-mirror-editor-atom-color: var(--pitaya-periwinkle0);
+  --jp-mirror-editor-number-color: var(--pitaya-orange);
   --jp-mirror-editor-def-color: #b07afc;
-  --jp-mirror-editor-variable-color: #f3907e;
-  --jp-mirror-editor-variable-2-color: #b07afc;
+  --jp-mirror-editor-variable-color: var(--pitaya-orange);
+  --jp-mirror-editor-variable-2-color: var(--pitaya-lilac);
   --jp-mirror-editor-variable-3-color: #c6d8fa;
   --jp-mirror-editor-punctuation-color: #d6deeb;
-  --jp-mirror-editor-property-color: #efefef;
-  --jp-mirror-editor-operator-color: #b07afc;
-  --jp-mirror-editor-comment-color: #7E7AAA;
-  --jp-mirror-editor-string-color: #66E9EC;
+  --jp-mirror-editor-property-color: var(--pitaya-foreground);
+  --jp-mirror-editor-operator-color:var(--pitaya-lilac);
+  --jp-mirror-editor-comment-color: var(--pitaya-muted-lilac);
+  --jp-mirror-editor-string-color: var(--pitaya-teal-extra);
   --jp-mirror-editor-string-2-color: #A599E9;
   --jp-mirror-editor-meta-color: #aa22ff;
-  --jp-mirror-editor-qualifier-color: #7E7AAA;
+  --jp-mirror-editor-qualifier-color: var(--pitaya-muted-lilac);
   --jp-mirror-editor-builtin-color: #CAF884;
-  --jp-mirror-editor-bracket-color: #82b1ff;
-  --jp-mirror-editor-tag-color: #82b1ff;
-  --jp-mirror-editor-attribute-color: #f3907e;
-  --jp-mirror-editor-header-color: #66E9EC;
-  --jp-mirror-editor-quote-color: #efefef;
-  --jp-mirror-editor-link-color: #C4A2F5;
-  --jp-mirror-editor-error-color: #ff6e9c;
-  --jp-mirror-editor-hr-color: #7E7AAA;
+  --jp-mirror-editor-bracket-color: var(--pitaya-periwinkle-extra1);
+  --jp-mirror-editor-tag-color: var(--pitaya-periwinkle-extra1);
+  --jp-mirror-editor-attribute-color: var(--pitaya-orange);
+  --jp-mirror-editor-header-color: var(--pitaya-teal-extra);
+  --jp-mirror-editor-quote-color: var(--pitaya-foreground);
+  --jp-mirror-editor-link-color: var(--pitaya-lilac);
+  --jp-mirror-editor-error-color: var(--pitaya-red0);
+  --jp-mirror-editor-hr-color: var(--pitaya-muted-lilac);
 
   /* Vega extension styles */
 
-  --jp-vega-background: white;
+  --jp-vega-background: var(--pitaya-foreground);
 
   /* Sidebar-related styles */
 
