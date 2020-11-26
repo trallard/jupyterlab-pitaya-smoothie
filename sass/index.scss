@@ -24,7 +24,7 @@ pre {
 button.jp-mod-styled {
     &.jp-mod-reject {
         background: var(--pitaya-active-items);
-        border: none;
+        border: 0;
         color: var(--pitaya-active-items-foreground);
 
         &:active,
@@ -40,6 +40,17 @@ button.jp-mod-styled {
         &:active,
         &:hover {
             background: var(--jp-error-color2);
+        }
+    }
+
+    &.jp-mod-accent {
+        background: var(--pitaya-periwinkle0);
+        color: var(--pitaya-background);
+        border: 0;
+
+        &:active,
+        &:hover {
+            background: var(--pitaya-periwinkle1);
         }
     }
 }
@@ -76,7 +87,7 @@ button.jp-mod-styled {
 div.CodeMirror span.CodeMirror-matchingbracket {
     color: #facd49;
 }
-div.CodeMirror span.CodeMirror-matchingbracket {
+div.CodeMirror span.CodeMirror-nonmatchingbracket {
     color: var(--jp-error-color1);
 }
 

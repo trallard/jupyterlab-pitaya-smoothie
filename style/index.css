@@ -18,7 +18,7 @@ pre {
 -----------------------------------------*/
 button.jp-mod-styled.jp-mod-reject {
   background: var(--pitaya-active-items);
-  border: none;
+  border: 0;
   color: var(--pitaya-active-items-foreground); }
   button.jp-mod-styled.jp-mod-reject:active, button.jp-mod-styled.jp-mod-reject:hover {
     background: var(--pitaya-active-items1); }
@@ -27,6 +27,12 @@ button.jp-mod-styled.jp-mod-warn {
   color: var(--pitaya-background); }
   button.jp-mod-styled.jp-mod-warn:active, button.jp-mod-styled.jp-mod-warn:hover {
     background: var(--jp-error-color2); }
+button.jp-mod-styled.jp-mod-accent {
+  background: var(--pitaya-periwinkle0);
+  color: var(--pitaya-background);
+  border: 0; }
+  button.jp-mod-styled.jp-mod-accent:active, button.jp-mod-styled.jp-mod-accent:hover {
+    background: var(--pitaya-periwinkle1); }
 
 /* Change sidebar items */
 .jp-DirListing-item.jp-mod-selected {
@@ -48,7 +54,7 @@ button.jp-mod-styled.jp-mod-warn {
 div.CodeMirror span.CodeMirror-matchingbracket {
   color: #facd49; }
 
-div.CodeMirror span.CodeMirror-matchingbracket {
+div.CodeMirror span.CodeMirror-nonmatchingbracket {
   color: var(--jp-error-color1); }
 
 .CodeMirror-linenumber {
