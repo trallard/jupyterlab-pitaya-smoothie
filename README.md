@@ -45,7 +45,7 @@ For more details about the core theme colours and the such check out the main th
 ## Installation <img src=https://github.com/trallard/pitaya_smoothie/raw/master/images/icons/settings.png  width="50"/>
 
 ```bash
-jupyter labextension install trallard/jupyter_pitaya_smoothie
+jupyter labextension install @trallard/jupyter_pitaya_smoothie
 ```
 
 ## Snapshots <img alt="code" src="https://github.com/trallard/pitaya_smoothie/raw/master/images/icons/code.png" width="50" />
