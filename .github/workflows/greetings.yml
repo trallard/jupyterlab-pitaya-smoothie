@@ -1,0 +1,13 @@
+name: Greetings
+
+on: [pull_request, issues]
+
+jobs:
+  greeting:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/first-interaction@v1
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        issue-message: 'Welcome to Pitaya Smoothie and thanks for contributing to it. As a reminder, here are our[contibution guidelines](https://github.com/trallard/jupyterlab-pitaya-smoothie/blob/main/CONTRIBUTING.md)'
+        pr-message: 'Thanks for for your contibution to Pitaya Smoothie! Your time and efforts are massively appreciated 💜'
