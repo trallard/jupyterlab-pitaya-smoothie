@@ -75,6 +75,8 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   --pitaya-lilac: #b07afc;
   --pitaya-muted-lilac: #7E7AAA;
+  --pitaya-bright-purple: #aa22ff;
+  /* --pitaya-bright-purple: #a56CF5; */
 
   /* Elevation
    *
@@ -253,7 +255,7 @@ all of MD as it is not optimized for dense, information rich UIs.
    */
 
   /* main notebook background - same as editor original theme*/
-  --jp-layout-color0: #181036;
+  --jp-layout-color0: var(--pitaya-background);
   /* sidebar - file names, menu bar, active tab */
   --jp-layout-color1: #0b0718; 
   /* activity bar, inactive tab, status bar*/
@@ -322,7 +324,7 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-cell-collapser-min-height: 20px;
   --jp-cell-collapser-not-active-hover-opacity: 0.6;
 
-  --jp-cell-editor-background: #181036;
+  --jp-cell-editor-background: var(--pitaya-background);
   --jp-cell-editor-border-color: rgba(	137, 164, 244, 0.6);
   --jp-cell-editor-box-shadow: inset 0 0 2px var(--pitaya-periwinkle1);
   --jp-cell-editor-active-background: var(--jp-layout-color0);
@@ -334,7 +336,7 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-cell-prompt-opacity: 1;
   --jp-cell-prompt-not-active-opacity: 0.5;
   --jp-cell-prompt-not-active-font-color: var(--pitaya-periwinkle-extra);
-  --jp-cell-inprompt-font-color: #a56CF5;
+  --jp-cell-inprompt-font-color: var(--pitaya-bright-purple);
   --jp-cell-outprompt-font-color: var(--pitaya-green0);
 
   /* Notebook specific styles */
@@ -398,19 +400,19 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-mirror-editor-keyword-color: var(--pitaya-pink0);
   --jp-mirror-editor-atom-color: var(--pitaya-periwinkle0);
   --jp-mirror-editor-number-color: var(--pitaya-orange);
-  --jp-mirror-editor-def-color: #b07afc;
+  --jp-mirror-editor-def-color: var(--pitaya-lilac);
   --jp-mirror-editor-variable-color: var(--pitaya-orange);
   --jp-mirror-editor-variable-2-color: var(--pitaya-lilac);
-  --jp-mirror-editor-variable-3-color: #c6d8fa;
+  --jp-mirror-editor-variable-3-color: var(--pitaya-periwinkle3);
   --jp-mirror-editor-punctuation-color: #d6deeb;
   --jp-mirror-editor-property-color: var(--pitaya-foreground);
   --jp-mirror-editor-operator-color:var(--pitaya-lilac);
   --jp-mirror-editor-comment-color: var(--pitaya-muted-lilac);
   --jp-mirror-editor-string-color: var(--pitaya-teal-extra);
   --jp-mirror-editor-string-2-color: #A599E9;
-  --jp-mirror-editor-meta-color: #aa22ff;
+  --jp-mirror-editor-meta-color: var(--pitaya-bright-purple);
   --jp-mirror-editor-qualifier-color: var(--pitaya-muted-lilac);
-  --jp-mirror-editor-builtin-color: #CAF884;
+  --jp-mirror-editor-builtin-color: var(--pitaya-orange);
   --jp-mirror-editor-bracket-color: var(--pitaya-periwinkle-extra1);
   --jp-mirror-editor-tag-color: var(--pitaya-periwinkle-extra1);
   --jp-mirror-editor-attribute-color: var(--pitaya-orange);
@@ -419,27 +421,15 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-mirror-editor-link-color: var(--pitaya-lilac);
   --jp-mirror-editor-error-color: var(--pitaya-red0);
   --jp-mirror-editor-hr-color: var(--pitaya-muted-lilac);
+  --jp-mirror-matching-bracket-color: #ffffff;
 
   /* Vega extension styles */
 
   --jp-vega-background: var(--pitaya-foreground);
 
-  /* Sidebar-related styles */
 
-  --jp-sidebar-min-width: 180px;
+  /* icons */
 
-  /* scrollbar related styles. Supports every browser except Edge.
-   * On Firefox, only the color settings are respected.
-   */
-  --jp-scrollbar-background-color: var(--jp-layout-color0);
-  --jp-scrollbar-endpad: 3px;
-  /* the minimum gap between the thumb and the ends of a scrollbar */
-  --jp-scrollbar-thumb-color: 213, 196, 161;
-  /* need to specify thumb color as an RGB triplet */
-  --jp-scrollbar-thumb-margin: 5px;
-  /* the space in between the sides of the thumb and the track */
-  --jp-scrollbar-thumb-radius: 9px;
-  /* set to a large-ish value for rounded endcaps on the thumb */ 
 
 }
 

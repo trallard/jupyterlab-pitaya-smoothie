@@ -15,3 +15,44 @@ pre {
   font-size: var(--jp-code-font-size);
   line-height: var(--jp-code-line-height);
 }
+
+/* Change button styles */
+
+button.jp-mod-styled.jp-mod-reject {
+    background: var(--pitaya-periwinkle0);
+    border: 0;
+    color: var(--pitaya-background);
+}
+
+button.jp-mod-styled.jp-mod-reject:active {
+    background: var(--pitaya-periwinkle1);
+}
+
+button.jp-mod-styled.jp-mod-warn:active {
+    background: var(--pitaya-red2);
+}
+
+button.jp-mod-styled.jp-mod-warn {
+    background: var(--jp-error-color1);
+    border: 0;
+    color: var(--pitaya-background);
+}
+
+/* Change sidebar items */
+
+.jp-DirListing-item.jp-mod-selected {
+    color: var(--jp-info-color1);
+    background: var(--pitaya-active-items);
+}
+
+.jp-DirListing-item.jp-mod-running .jp-DirListing-itemIcon:before {
+    color: var(--pitaya-green0);
+    content: '\25CF';
+    font-size: 8px;
+    position: absolute;
+    left: -8px;
+}
+
+.jp-icon-warn0[fill] {
+    fill: var(--pitaya-orange);
+}
