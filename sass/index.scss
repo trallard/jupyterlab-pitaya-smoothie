@@ -43,7 +43,7 @@ button.jp-mod-styled {
         }
     }
 
-    &.jp-mod-accent {
+    &.jp-mod-accept {
         background: var(--pitaya-periwinkle0);
         color: var(--pitaya-background);
         border: 0;
@@ -85,12 +85,12 @@ button.jp-mod-styled {
 // CodeMirror common addons
 
 div.CodeMirror span.CodeMirror-matchingbracket {
-    color: #facd49;
+    color: #f18fac;
 }
 div.CodeMirror span.CodeMirror-nonmatchingbracket {
     color: var(--jp-error-color1);
 }
 
 .CodeMirror-linenumber {
-    color: #484f7d;
+    color: var(--jp-ui-inverse-font-color2);
 }

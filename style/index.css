@@ -27,11 +27,11 @@ button.jp-mod-styled.jp-mod-warn {
   color: var(--pitaya-background); }
   button.jp-mod-styled.jp-mod-warn:active, button.jp-mod-styled.jp-mod-warn:hover {
     background: var(--jp-error-color2); }
-button.jp-mod-styled.jp-mod-accent {
+button.jp-mod-styled.jp-mod-accept {
   background: var(--pitaya-periwinkle0);
   color: var(--pitaya-background);
   border: 0; }
-  button.jp-mod-styled.jp-mod-accent:active, button.jp-mod-styled.jp-mod-accent:hover {
+  button.jp-mod-styled.jp-mod-accept:active, button.jp-mod-styled.jp-mod-accept:hover {
     background: var(--pitaya-periwinkle1); }
 
 /* Change sidebar items */
@@ -52,12 +52,12 @@ button.jp-mod-styled.jp-mod-accent {
   fill: var(--jp-content-link-color); }
 
 div.CodeMirror span.CodeMirror-matchingbracket {
-  color: #facd49; }
+  color: #f18fac; }
 
 div.CodeMirror span.CodeMirror-nonmatchingbracket {
   color: var(--jp-error-color1); }
 
 .CodeMirror-linenumber {
-  color: #484f7d; }
+  color: var(--jp-ui-inverse-font-color2); }
 
 /*# sourceMappingURL=index.css.map */
