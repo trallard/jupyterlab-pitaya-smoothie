@@ -292,8 +292,8 @@ notebook. This padding is to enable a 'scroll past end' feature in a notebook.
   );
   /* Rendermime styles */
   --jp-rendermime-error-background: rgba(255, 90, 143, 0.2);
-  --jp-rendermime-table-row-background: var(--md-grey-100);
-  --jp-rendermime-table-row-hover-background: var(--md-light-blue-50);
+  --jp-rendermime-table-row-background: var(--pitaya-active-items);
+  --jp-rendermime-table-row-hover-background: var(--pitaya-active-items1);
   /* Dialog specific styles */
   --jp-dialog-background: rgba(51, 48, 107, 0.25);
   /* Console specific styles */
