@@ -1,0 +1,36 @@
+name: test 
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repo 
+      uses: actions/checkout@v2
+    - uses: actions/setup-node@v1
+      with:
+        node-version: 12
+    - uses: actions/setup-python@v2
+      with:
+        python-version: '3.8' 
+    - name: Install dependencies
+      run: |
+        pip install -U pip setuptools 
+        nvm install 6
+        pip install --upgrade ".[test]" -v
+    - name: Run tests 
+      run: |
+        jupyter nbextension list
+        jupyter nbextension enable --py --sys-prefix jupyter_pitaya_smoothie
+        pip install jupyterlab 
+        jupyter labextension list 
+        jupyter labextension list 2>&1 | grep -q jupyter_pitaya_smoothie 
+        jupyter labextension link
