@@ -45,7 +45,7 @@ For more details about the core theme colours and the such check out the main th
 ## Installation <img src=https://github.com/trallard/pitaya_smoothie/raw/master/images/icons/settings.png  width="50"/>
 
 ```bash
-jupyter labextension install @trallard/jupyter_pitaya_smoothie
+jupyter labextension install @trallard/jupyter-pitaya-smoothie
 ```
 
 You can check that the extension has been properly installed and enabled by running the following command in your command line:
@@ -94,6 +94,7 @@ To rebuild the package and the JupyterLab app:
 npm run build
 jupyter lab build
 ```
+
 ## Contributing <img alt="hands" src="https://github.com/trallard/pitaya_smoothie/blob/master/images/icons/teamwork.png?raw=true" width="50" />
 
 🚧 This project is always a work in progress, and everyone is welcome and encouraged to collaborate in it. 🚧
