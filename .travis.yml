@@ -13,8 +13,8 @@ install:
   - pip install --upgrade ".[test]" -v
 script:
   - jupyter nbextension list
-  - jupyter nbextension enable --py --sys-prefix jupyter_pitaya_smoothie
+  - jupyter nbextension enable --py --sys-prefix jupyter-pitaya-smoothie
   - pip install jupyterlab
   - jupyter labextension list
-  - jupyter labextension list 2>&1 | grep -q jupyter_pitaya_smoothie
+  - jupyter labextension list 2>&1 | grep -q jupyter-pitaya-smoothie
   - jupyter labextension link

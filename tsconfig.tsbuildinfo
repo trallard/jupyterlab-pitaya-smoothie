@@ -1426,8 +1426,8 @@
         "signature": "7a7e8dec050f4ad9d6b093812a3a203acb13a32364079db20f7a6fde38f8427c"
       },
       "./src/index.ts": {
-        "version": "55fbf638d8ca77d9048955b6d52f11f44e52be6902f9e1a3ffeb219e222eea1a",
-        "signature": "b2876e2596c1664ab83dc2b3a1171ffc228aa454cceeba3bb17b821909d3e586"
+        "version": "5fff7a0d7cbc5756310eeded4c6d8c6e93f4be1777052348da9a2063b0c4f3d4",
+        "signature": "dfa696bed418475319f601b6e8915ed1c3d1c7c2e7ded3b9d94048045b5560ff"
       }
     },
     "options": {

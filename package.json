@@ -1,5 +1,5 @@
 {
-  "name": "@trallard/jupyter_pitaya_smoothie",
+  "name": "@trallard/jupyter-pitaya-smoothie",
   "version": "0.1.0",
   "description": "Pitaya Smoothie in JupyterLab: a dark theme inspired by 2018 Pantone of the Year. Designed for low-light condition and colorblindness tested.",
   "author": "Tania Allard <trallard@bitsandchips.me>",
