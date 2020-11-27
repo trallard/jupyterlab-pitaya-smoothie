@@ -48,6 +48,20 @@ For more details about the core theme colours and the such check out the main th
 jupyter labextension install @trallard/jupyter_pitaya_smoothie
 ```
 
+You can check that the extension has been properly installed and enabled by running the following command in your command line:
+
+```bash
+jupyter labextension list
+```
+
+:sparkles: To enable the theme in JupyterLab:
+Go to `Settings -> JupyterLab Theme -> Jupyter Pitaya Smoothie`
+
+To enable the theme's scrollbars choose any of:
+
+- Navigate to `Settings -> Advanced Settings Editor -> Theme` then in `User preferences` add `"theme-scrollbars: true"
+- Check `Settings -> JupyterLab Theme -> Theme Scrollbars`
+
 ## Snapshots <img alt="code" src="https://github.com/trallard/pitaya_smoothie/raw/master/images/icons/code.png" width="50" />
 
 ![JupyterLab Pitaya smoothie](https://img.shields.io/badge/JupyterLab-Pitaya%20Smoothie-gray.svg?colorA=2D2A56&colorB=7A76C2&style=flat.svg)
