@@ -1,7 +1,7 @@
 {
   "name": "@trallard/jupyter_pitaya_smoothie",
   "version": "0.1.0",
-  "description": "Pitaya Smoothie in JupyterLab",
+  "description": "Pitaya Smoothie in JupyterLab: a dark theme inspired by 2018 Pantone of the Year. Designed for low-light condition and colorblindness tested.",
   "author": "Tania Allard <trallard@bitsandchips.me>",
   "keywords": [
     "jupyter",
@@ -56,10 +56,10 @@
   },
   "homepage": "https://trallard.dev",
   "bugs": {
-    "url": ""
+    "url": "https://trallard.github.io/pitaya_smoothie/"
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/trallard/jupyterlab-pitaya-smoothie"
   }
 }
