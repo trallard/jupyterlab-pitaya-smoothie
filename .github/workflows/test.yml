@@ -21,6 +21,14 @@ jobs:
     - uses: actions/setup-python@v2
       with:
         python-version: '3.8' 
+    - name: Cache pip on Linux
+      uses: actions/cache@v1
+      if: startsWith(runner.os, 'Linux')
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ matrix.python }}-${{ hashFiles('**/requirements.txt', 'setup.py') }}
+        restore-keys: |
+            ${{ runner.os }}-pip-${{ matrix.python }}
     - name: Install dependencies
       run: |
         pip install -U pip setuptools 
@@ -28,8 +36,8 @@ jobs:
     - name: Run tests 
       run: |
         jupyter nbextension list
-        jupyter nbextension enable --py --sys-prefix jupyter_pitaya_smoothie
+        jupyter nbextension enable --py --sys-prefix jupyter-pitaya-smoothie
         pip install jupyterlab 
         jupyter labextension list 
-        jupyter labextension list 2>&1 | grep -q jupyter_pitaya_smoothie 
+        jupyter labextension list 2>&1 | grep -q jupyter-pitaya-smoothie 
         jupyter labextension link
