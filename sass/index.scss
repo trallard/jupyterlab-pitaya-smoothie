@@ -50,7 +50,7 @@ button.jp-mod-styled {
 
         &:active,
         &:hover {
-            background: var(--pitaya-periwinkle1);
+            background: var(--pitaya-periwinkle400);
         }
     }
 }
@@ -64,7 +64,7 @@ button.jp-mod-styled {
     }
 
     &.jp-mod-running .jp-DirListing-itemIcon:before {
-        color: var(--pitaya-green0);
+        color: var(--pitaya-teal500);
         content: "\25CF";
         font-size: 8px;
         position: absolute;
