@@ -33,36 +33,54 @@ all of MD as it is not optimized for dense, information rich UIs.
     // pitaya theme colours
     // used http://davidjohnstone.net/pages/lch-lab-colour-gradient-picker to create a
     // consistent colour palette
-    --pitaya-pink0: #f25a92;
-    --pitaya-pink1: #f474a3;
-    --pitaya-pink2: #f78fb5;
-    --pitaya-pink3: #f9aec9;
-    --pitaya-yellow0: #fad000;
-    --pitaya-yellow1: #fbd61f;
-    --pitaya-yellow2: #fde159;
-    --pitaya-yellow3: #feee9f;
+    --pitaya-pink500: #f25a92;
+    --pitaya-pink400: #f474a3;
+    --pitaya-pink300: #f78fb5;
+    --pitaya-pink100: #f9aec9;
+    --pitaya-yellow500: #fad000;
+    --pitaya-yellow400: #fbd61f;
+    --pitaya-yellow300: #fde159;
+    --pitaya-yellow100: #feee9f;
     --pitaya-yellow-extra: #ffe46b;
-    --pitaya-green0: #18bec2;
-    --pitaya-green1: #33cccf;
-    --pitaya-green2: #60dadc;
-    --pitaya-green3: #9ce8e9;
+    --pitaya-teal500: #1abec2;
+    --pitaya-teal400: #33cccf;
+    --pitaya-teal300: #60dadc;
+    --pitaya-teal100: #9ce8e9;
     --pitaya-teal-extra: #37e0e0;
     --pitaya-teal-extra1: #11b1b4;
-    --pitaya-periwinkle0: #7998f2;
-    --pitaya-periwinkle1: #89a4f4;
-    --pitaya-periwinkle2: #aabdf7;
-    --pitaya-periwinkle3: #cbd7fa;
+    --pitaya-periwinkle500: #7998f2;
+    --pitaya-periwinkle400: #89a4f4;
+    --pitaya-periwinkle300: #aabdf7;
+    --pitaya-periwinkle100: #cbd7fa;
     --pitaya-periwinkle-extra: #9dbcf6;
     --pitaya-periwinkle-extra1: #6f8eea;
-    --pitaya-red0: #f45c7b;
-    --pitaya-red1: #f7718c;
-    --pitaya-red2: #f991a6;
-    --pitaya-red3: #fcc2ce;
+    --pitaya-red500: #f45c7b;
+    --pitaya-red400: #f7718c;
+    --pitaya-red300: #f991a6;
+    --pitaya-red100: #fcc2ce;
     --pitaya-orange: #f38672;
+    // Base components
     --pitaya-foreground: #f7f7f7;
     --pitaya-background: #181036;
+
+    // Main colour
+    // base colour in editor is indigo700
+    --indigo-900: #06040f;
+    --indigo-800: #0e0920;
+    --indigo-700: #181036;
+    --indigo-600: #261b4d;
+    --indigo-500: #372b64;
+    --indigo-400: #4c3f7b;
+    --indigo-300: #655992;
+    --indigo-200: #8278a9;
+    --indigo-100: #a29ac0;
+    --indigo-050: #c4bfd7;
+    --indigo-025: #eae9ee;
+
     --pitaya-active-items: #2d2a60;
+    --pitaya-active-items: var(--indigo-600);
     --pitaya-active-items1: #3a367b;
+    --pitaya-active-items1: var(--indigo-500);
     --pitaya-active-items-foreground: var(--pitaya-periwinkle-extra1);
     --pitaya-lilac: #b07afc;
     --pitaya-muted-lilac: #8b81b0;
@@ -246,19 +264,20 @@ all of MD as it is not optimized for dense, information rich UIs.
    */
 
     /* main notebook background - same as editor original theme*/
-    --jp-layout-color0: var(--pitaya-background);
+    --jp-layout-color0: var(--indigo-700);
 
     /* sidebar - file names, menu bar, active tab */
-    --jp-layout-color1: #0b0718;
+    --jp-layout-color1: var(--indigo-900);
 
     /* activity bar, inactive tab, status bar*/
     /* pitaya smoothie -> using same as background 181036 */
     /* here use same as inactive tabs */
     --jp-layout-color2: #1f1445;
+    // --jp-layout-color2: var(--indigo800)
 
     /* editor/notebok surrounding area */
-    --jp-layout-color3: #130c29;
-    --jp-layout-color4: #251954;
+    --jp-layout-color3: var(--indigo-800);
+    --jp-layout-color4: var(--indigo-600);
 
     /* Inverse Layout
    *
@@ -266,48 +285,55 @@ all of MD as it is not optimized for dense, information rich UIs.
    * theme these would go from dark to light.
    */
 
+    // dark theme light -> dark
     /* using activity bar colours as reference from pitaya smoothie*/
     --jp-inverse-layout-color0: #a29fd4;
+    --jp-inverse-layout-color0: var(--indigo-025);
     --jp-inverse-layout-color1: #9491ce;
+    --jp-inverse-layout-color1: var(--indigo-050);
 
     /* status bar icons */
     --jp-inverse-layout-color2: #8784c8;
+    --jp-inverse-layout-color2: var(--indigo-100);
 
     /* activity bar icons */
     --jp-inverse-layout-color3: #7a76c2;
+    --jp-inverse-layout-color3: var(--indigo-200);
     --jp-inverse-layout-color4: #6d68bc;
+    --jp-inverse-layout-color4: var(--indigo-300);
 
     /* Brand/accent */
 
-    --jp-brand-color0: var(--pitaya-green0);
+    --jp-brand-color0: var(--pitaya-teal500);
 
     /* sidebar active item - testing compliance with pitaya */
-    --jp-brand-color1: var(--pitaya-green0);
-    --jp-brand-color2: var(--pitaya-green1);
-    --jp-brand-color3: var(--pitaya-green2);
-    --jp-accent-color0: var(--pitaya-pink0);
-    --jp-accent-color1: var(--pitaya-pink1);
-    --jp-accent-color2: var(--pitaya-pink2);
-    --jp-accent-color3: var(--pitaya-pink3);
+    // secondary - teal, accent - pink
+    --jp-brand-color1: var(--pitaya-teal500);
+    --jp-brand-color2: var(--pitaya-teal400);
+    --jp-brand-color3: var(--pitaya-teal300);
+    --jp-accent-color0: var(--pitaya-pink500);
+    --jp-accent-color1: var(--pitaya-pink400);
+    --jp-accent-color2: var(--pitaya-pink300);
+    --jp-accent-color3: var(--pitaya-pink100);
 
     /* State colors (warn, error, success, info) */
 
-    --jp-warn-color0: var(--pitaya-yellow0);
-    --jp-warn-color1: var(--pitaya-yellow1);
-    --jp-warn-color2: var(--pitaya-yellow2);
-    --jp-warn-color3: var(--pitaya-yellow3);
-    --jp-error-color0: var(--pitaya-red0);
-    --jp-error-color1: var(--pitaya-red1);
-    --jp-error-color2: var(--pitaya-red2);
-    --jp-error-color3: var(--pitaya-red3);
-    --jp-success-color0: var(--pitaya-green0);
-    --jp-success-color1: var(--pitaya-green1);
-    --jp-success-color2: var(--pitaya-green2);
-    --jp-success-color3: var(--pitaya-green3);
-    --jp-info-color0: var(--pitaya-periwinkle0);
-    --jp-info-color1: var(--pitaya-periwinkle1);
-    --jp-info-color2: var(--pitaya-periwinkle2);
-    --jp-info-color3: var(--pitaya-periwinkle3);
+    --jp-warn-color0: var(--pitaya-yellow500);
+    --jp-warn-color1: var(--pitaya-yellow400);
+    --jp-warn-color2: var(--pitaya-yellow300);
+    --jp-warn-color3: var(--pitaya-yellow100);
+    --jp-error-color0: var(--pitaya-red500);
+    --jp-error-color1: var(--pitaya-red400);
+    --jp-error-color2: var(--pitaya-red100);
+    --jp-error-color3: var(--pitaya-red100);
+    --jp-success-color0: var(--pitaya-teal500);
+    --jp-success-color1: var(--pitaya-teal400);
+    --jp-success-color2: var(--pitaya-teal300);
+    --jp-success-color3: var(--pitaya-teal100);
+    --jp-info-color0: var(--pitaya-periwinkle500);
+    --jp-info-color1: var(--pitaya-periwinkle400);
+    --jp-info-color2: var(--pitaya-periwinkle100);
+    --jp-info-color3: var(--pitaya-periwinkle100);
 
     /* Cell specific styles */
 
@@ -317,7 +343,7 @@ all of MD as it is not optimized for dense, information rich UIs.
     --jp-cell-collapser-not-active-hover-opacity: 0.6;
     --jp-cell-editor-background: var(--pitaya-background);
     --jp-cell-editor-border-color: rgba(137, 164, 244, 0.6);
-    --jp-cell-editor-box-shadow: inset 0 0 2px var(--pitaya-periwinkle1);
+    --jp-cell-editor-box-shadow: inset 0 0 2px var(--pitaya-periwinkle400);
     --jp-cell-editor-active-background: var(--jp-layout-color0);
     --jp-cell-editor-active-border-color: var(--jp-brand-color0);
     --jp-cell-prompt-width: 64px;
@@ -327,7 +353,7 @@ all of MD as it is not optimized for dense, information rich UIs.
     --jp-cell-prompt-not-active-opacity: 0.5;
     --jp-cell-prompt-not-active-font-color: var(--pitaya-periwinkle-extra);
     --jp-cell-inprompt-font-color: var(--pitaya-bright-purple);
-    --jp-cell-outprompt-font-color: var(--pitaya-green0);
+    --jp-cell-outprompt-font-color: var(--pitaya-teal500);
 
     /* Notebook specific styles */
 
@@ -373,7 +399,7 @@ all of MD as it is not optimized for dense, information rich UIs.
 
     /* Input field styles */
 
-    --jp-input-box-shadow: inset 0 0 2px var(--pitaya-periwinkle0);
+    --jp-input-box-shadow: inset 0 0 2px var(--pitaya-periwinkle500);
     --jp-input-active-background: var(--jp-layout-color1);
     --jp-input-hover-background: var(--jp-layout-color1);
     --jp-input-background: var(--jp-layout-color0);
@@ -384,15 +410,15 @@ all of MD as it is not optimized for dense, information rich UIs.
 
     --jp-editor-selected-background: var(--pitaya-hihglight);
     --jp-editor-selected-focused-background: var(--pitaya-hihglight-focused);
-    --jp-editor-cursor-color: var(--pitaya-red0);
+    --jp-editor-cursor-color: var(--pitaya-red500);
 
     /* Code mirror specific styles */
 
     --jp-mirror-editor-keyword-color: var(--pitaya-lilac);
-    --jp-mirror-editor-atom-color: var(--pitaya-periwinkle0);
+    --jp-mirror-editor-atom-color: var(--pitaya-periwinkle500);
     --jp-mirror-editor-number-color: var(--pitaya-orange);
-    --jp-mirror-editor-def-color: var(--pitaya-periwinkle2);
-    --jp-mirror-editor-variable-color: var(--pitaya-periwinkle2);
+    --jp-mirror-editor-def-color: var(--pitaya-periwinkle300);
+    --jp-mirror-editor-variable-color: var(--pitaya-periwinkle300);
     --jp-mirror-editor-variable-2-color: var(--pitaya-teal-extras);
     --jp-mirror-editor-variable-3-color: var(--pitaya-foreground);
     --jp-mirror-editor-punctuation-color: #f18fac;
@@ -410,7 +436,7 @@ all of MD as it is not optimized for dense, information rich UIs.
     --jp-mirror-editor-header-color: var(--pitaya-teal-extra);
     --jp-mirror-editor-quote-color: var(--pitaya-foreground);
     --jp-mirror-editor-link-color: var(--pitaya-lilac);
-    --jp-mirror-editor-error-color: var(--pitaya-red0);
+    --jp-mirror-editor-error-color: var(--pitaya-red500);
     --jp-mirror-editor-hr-color: var(--pitaya-muted-lilac);
 
     /* Vega extension styles */
