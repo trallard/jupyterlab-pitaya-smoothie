@@ -23,9 +23,9 @@ pre {
 
 button.jp-mod-styled {
     &.jp-mod-reject {
-        background: var(--pitaya-active-items);
+        background: var(--pitaya-active-items1);
         border: 0;
-        color: var(--pitaya-active-items-foreground);
+        color: var(--pitaya-foreground);
 
         &:active,
         &:hover {
@@ -55,12 +55,26 @@ button.jp-mod-styled {
     }
 }
 
+/*
+Disclaimer buttons
+*/
+
+.jp-extensionmanager-disclaimer-disable {
+    background-color: var(--jp-brand-color1) !important;
+    color: var(--indigo-700) !important;
+}
+
+.jp-extensionmanager-disclaimer-enable {
+    background-color: var(--jp-error-color1) !important;
+    color: var(--indigo-700) !important;
+}
+
 /* Change sidebar items */
 
 .jp-DirListing-item {
     &.jp-mod-selected {
         color: var(--jp-info-color1);
-        background: var(--pitaya-active-items);
+        background: var(--pitaya-active-items1);
     }
 
     &.jp-mod-running .jp-DirListing-itemIcon:before {
@@ -70,6 +84,40 @@ button.jp-mod-styled {
         position: absolute;
         left: -8px;
     }
+
+    &:hover:not(.jp-mod-selected) {
+        background: var(--pitaya-active-items);
+    }
+}
+
+// Menu bar items
+
+.lm-MenuBar-item.lm-type-separator {
+    border-left: var(--jp-border-width) solid var(--jp-border-color3);
+}
+
+.lm-MenuBar-item {
+    &.lm-mod-active {
+        background: var(--jp-layout-color3);
+    }
+
+    &:hover {
+        background: var(--pitaya-active-items);
+    }
+}
+
+.lm-Menu-item {
+    &.lm-mod-active {
+        background: var(--jp-layout-color3);
+    }
+
+    &:hover {
+        background: var(--pitaya-active-items);
+    }
+}
+
+.lm-Menu-item[data-type="separator"] > div::after {
+    border-top: var(--jp-border-width) solid var(--jp-layout-color3);
 }
 
 // Icon colours
@@ -85,12 +133,18 @@ button.jp-mod-styled {
 // CodeMirror common addons
 
 div.CodeMirror span.CodeMirror-matchingbracket {
-    color: #f18fac;
+    color: #a599e9;
 }
 div.CodeMirror span.CodeMirror-nonmatchingbracket {
     color: var(--jp-error-color1);
 }
 
 .CodeMirror-linenumber {
-    color: var(--jp-ui-inverse-font-color2);
+    color: var(--jp-ui-inverse-font-color3);
+}
+
+// Dialogs
+
+.jp-Dialog-content {
+    border: var(--jp-border-width) solid var(--pitaya-lilac400);
 }

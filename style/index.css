@@ -19,9 +19,9 @@ pre {
 /* Change button styles 
 -----------------------------------------*/
 button.jp-mod-styled.jp-mod-reject {
-  background: var(--pitaya-active-items);
+  background: var(--pitaya-active-items1);
   border: 0;
-  color: var(--pitaya-active-items-foreground);
+  color: var(--pitaya-foreground);
 }
 button.jp-mod-styled.jp-mod-reject:active, button.jp-mod-styled.jp-mod-reject:hover {
   background: var(--pitaya-active-items1);
@@ -42,10 +42,23 @@ button.jp-mod-styled.jp-mod-accept:active, button.jp-mod-styled.jp-mod-accept:ho
   background: var(--pitaya-periwinkle400);
 }
 
+/*
+Disclaimer buttons
+*/
+.jp-extensionmanager-disclaimer-disable {
+  background-color: var(--jp-brand-color1) !important;
+  color: var(--indigo-700) !important;
+}
+
+.jp-extensionmanager-disclaimer-enable {
+  background-color: var(--jp-error-color1) !important;
+  color: var(--indigo-700) !important;
+}
+
 /* Change sidebar items */
 .jp-DirListing-item.jp-mod-selected {
   color: var(--jp-info-color1);
-  background: var(--pitaya-active-items);
+  background: var(--pitaya-active-items1);
 }
 .jp-DirListing-item.jp-mod-running .jp-DirListing-itemIcon:before {
   color: var(--pitaya-teal500);
@@ -53,6 +66,31 @@ button.jp-mod-styled.jp-mod-accept:active, button.jp-mod-styled.jp-mod-accept:ho
   font-size: 8px;
   position: absolute;
   left: -8px;
+}
+.jp-DirListing-item:hover:not(.jp-mod-selected) {
+  background: var(--pitaya-active-items);
+}
+
+.lm-MenuBar-item.lm-type-separator {
+  border-left: var(--jp-border-width) solid var(--jp-border-color3);
+}
+
+.lm-MenuBar-item.lm-mod-active {
+  background: var(--jp-layout-color3);
+}
+.lm-MenuBar-item:hover {
+  background: var(--pitaya-active-items);
+}
+
+.lm-Menu-item.lm-mod-active {
+  background: var(--jp-layout-color3);
+}
+.lm-Menu-item:hover {
+  background: var(--pitaya-active-items);
+}
+
+.lm-Menu-item[data-type=separator] > div::after {
+  border-top: var(--jp-border-width) solid var(--jp-layout-color3);
 }
 
 .jp-icon-warn0[fill] {
@@ -64,7 +102,7 @@ button.jp-mod-styled.jp-mod-accept:active, button.jp-mod-styled.jp-mod-accept:ho
 }
 
 div.CodeMirror span.CodeMirror-matchingbracket {
-  color: #f18fac;
+  color: #a599e9;
 }
 
 div.CodeMirror span.CodeMirror-nonmatchingbracket {
@@ -72,7 +110,11 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 }
 
 .CodeMirror-linenumber {
-  color: var(--jp-ui-inverse-font-color2);
+  color: var(--jp-ui-inverse-font-color3);
+}
+
+.jp-Dialog-content {
+  border: var(--jp-border-width) solid var(--pitaya-lilac400);
 }
 
 /*# sourceMappingURL=index.css.map */
